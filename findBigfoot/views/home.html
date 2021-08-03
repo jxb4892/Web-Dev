@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function moveBigFoot() {
+                var picture = document.getElementById('bigFoot');
+                if (picture != null) {
+                    alert('Woohoo, you win! You found Bigfoot!');
+                }
+                var x = Math.floor(Math.random() * 1000);
+                var y = Math.floor(Math.random() * 1000);
+                picture.style.top = x + 'px';
+                picture.style.left = y + 'px';
+            }
+        </script>
+        <title>Find BigFoot Game</title>
+        <h1>Can you find BigFoot?</h1>
+    </head>
+    <body style="background-image:url('views/forest.jpeg');">
+        <img
+                id = "bigFoot" src="views/bigfoot.png" alt="bigfoot"
+                onclick="moveBigFoot()"
+        />
+    </body>
+</html>
