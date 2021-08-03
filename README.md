@@ -1,2 +1,2 @@
 # Web-Dev
-Web dev practice on free time
+Web dev fun on free time
